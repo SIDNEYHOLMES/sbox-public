@@ -167,4 +167,6 @@ native static class MeshGlue as NativeEngine.MeshGlue
 	CUtlBuffer SerializePhysicsDataFromAggregate( CPhysicsData physData );
 
 	CPhysicsData BuildAggregateData( CPhysBodyDescArray pBodies );
+
+	void SetMeshMorphData( IMesh renderMesh, CastTo[SboxMorphDesc_t*] void* morphDescs, int numMorphs, CastTo[SboxMorphVertexDelta_t*] void* deltas, int numDeltas, string morphNames );
 }
