@@ -2,6 +2,10 @@ namespace Editor;
 
 public partial class SceneViewWidget
 {
+    /// <summary>
+    /// Nudge selected game objects in all scene modes
+    /// fallback to MeshEditor.SelectionTool when a tool is already present
+    /// </summary>
 	[Shortcut( "editor.nudge-up",    "UP",    typeof( SceneViewWidget ) )]
 	public void NudgeUp()    => NudgeSelectedObjects( Vector2.Up );
 
