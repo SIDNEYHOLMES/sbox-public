@@ -2,18 +2,18 @@ namespace Editor;
 
 public partial class SceneViewWidget
 {
-    /// <summary>
-    /// Nudge selected game objects in all scene modes
-    /// fallback to MeshEditor.SelectionTool when a tool is already present
-    /// </summary>
-	[Shortcut( "editor.nudge-up",    "UP",    typeof( SceneViewWidget ) )]
-	public void NudgeUp()    => NudgeSelectedObjects( Vector2.Up );
+	/// <summary>
+	/// Nudge selected game objects in all scene modes
+	/// fallback to MeshEditor.SelectionTool when a tool is already present
+	/// </summary>
+	[Shortcut( "editor.nudge-up", "UP", typeof( SceneViewWidget ) )]
+	public void NudgeUp() => NudgeSelectedObjects( Vector2.Up );
 
-	[Shortcut( "editor.nudge-down",  "DOWN",  typeof( SceneViewWidget ) )]
-	public void NudgeDown()  => NudgeSelectedObjects( Vector2.Down );
+	[Shortcut( "editor.nudge-down", "DOWN", typeof( SceneViewWidget ) )]
+	public void NudgeDown() => NudgeSelectedObjects( Vector2.Down );
 
-	[Shortcut( "editor.nudge-left",  "LEFT",  typeof( SceneViewWidget ) )]
-	public void NudgeLeft()  => NudgeSelectedObjects( Vector2.Left );
+	[Shortcut( "editor.nudge-left", "LEFT", typeof( SceneViewWidget ) )]
+	public void NudgeLeft() => NudgeSelectedObjects( Vector2.Left );
 
 	[Shortcut( "editor.nudge-right", "RIGHT", typeof( SceneViewWidget ) )]
 	public void NudgeRight() => NudgeSelectedObjects( Vector2.Right );
